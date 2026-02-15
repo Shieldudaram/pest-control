@@ -1,0 +1,16 @@
+Group #PestControlShopPage {
+  Anchor: (Top: 20, Left: 20, Width: 260, Height: 60);
+  LayoutMode: Top;
+
+  Group #ShopPanel {
+    Background: #000000(0.2);
+    Anchor: (Width: 260, Height: 60);
+    Padding: (Horizontal: 14, Vertical: 10);
+    LayoutMode: Top;
+
+    Label #ShopTitleLabel {
+      Style: (FontSize: 14, Alignment: Start);
+      Text: "Pest Control Shop";
+    }
+  }
+}

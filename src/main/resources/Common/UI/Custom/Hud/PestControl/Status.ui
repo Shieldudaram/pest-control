@@ -1,0 +1,11 @@
+{
+  "Root": {
+    "Type": "VBox",
+    "Children": [
+      { "Type": "Label", "Id": "TitleLabel", "Text": "Pest Control" },
+      { "Type": "Label", "Id": "Line1Label", "Text": "" },
+      { "Type": "Label", "Id": "Line2Label", "Text": "" },
+      { "Type": "Label", "Id": "Line3Label", "Text": "" }
+    ]
+  }
+}

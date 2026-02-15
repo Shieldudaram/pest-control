@@ -1,0 +1,31 @@
+Group #PestControlHud {
+  Anchor: (Top: 20, Left: 20, Width: 280, Height: 110);
+  LayoutMode: Top;
+
+  Group #PestPanel {
+    Background: #000000(0.2);
+    Anchor: (Width: 280, Height: 110);
+    Padding: (Horizontal: 12, Vertical: 10);
+    LayoutMode: Top;
+
+    Label #PcTitleLabel {
+      Style: (FontSize: 14, Alignment: Center);
+      Text: "Pest Control";
+    }
+
+    Label #PcLine1Label {
+      Style: (FontSize: 14, Alignment: Start);
+      Text: "";
+    }
+
+    Label #PcLine2Label {
+      Style: (FontSize: 14, Alignment: Start);
+      Text: "";
+    }
+
+    Label #PcLine3Label {
+      Style: (FontSize: 12, Alignment: Start);
+      Text: "";
+    }
+  }
+}

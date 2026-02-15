@@ -1,0 +1,22 @@
+{
+    "Group": "Chris__",
+    "Name": "PestControl",
+    "Version": "0.1.0",
+    "Description": "RuneScape-inspired Pest Control minigame for Hytale.",
+    "Authors": [
+        {
+            "Name": "Chris__"
+        }
+    ],
+    "Website": "",
+    "ServerVersion": "*",
+    "Dependencies": {
+        "Buuz135:MultipleHUD": "*"
+    },
+    "OptionalDependencies": {
+        "Buuz135:SimpleClaims": "*"
+    },
+    "DisabledByDefault": false,
+    "Main": "com.Chris__.pest_control.PestControlPlugin",
+    "IncludesAssetPack": true
+}

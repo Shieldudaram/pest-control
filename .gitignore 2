@@ -1,0 +1,15 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Local runtime
+run/
+
+# OS
+.DS_Store
