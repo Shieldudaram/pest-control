@@ -1,0 +1,33 @@
+name: Enforce Main PR Policy
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - labeled
+      - unlabeled
+      - edited
+
+permissions:
+  contents: read
+
+jobs:
+  enforce-main-target:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail PRs to main unless release-sync label is present
+        run: |
+          set -euo pipefail
+          labels='${{ toJson(github.event.pull_request.labels.*.name) }}'
+
+          if echo "$labels" | grep -q '"release-sync"'; then
+            echo "release-sync label present: PR to main is allowed."
+            exit 0
+          fi
+
+          echo "::error::Retarget this PR to dev. Use label 'release-sync' only for approved dev-to-main release sync."
+          exit 1
